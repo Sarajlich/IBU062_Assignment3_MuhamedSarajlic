@@ -31,7 +31,12 @@ PC2:
 PC3:
     Device Model: PC-PT
     IP Address: 210.3.14.3
-
+PC4:
+    Device Model: PC-PT
+    IP Address: 168.90.0.5
+PC5:
+    Device Model: PC-PT
+    IP Address: 210.3.14.2
 
 Laptop:
     Device Model: Laptop-PT
