@@ -41,3 +41,22 @@ PC5:
 Laptop:
     Device Model: Laptop-PT
     IP Address: 168.90.0.6
+
+
+
+DHCP Details:
+
+1) Enabling DHCP for "FirstSwitch" and "SecondSwitch":
+    ip dhcp pool (FirstSwitch || SecondSwitch)
+    network (168.90.0.0 255.255.0.0 || 210.3.14.0 255.255.255.0)
+    default-router (168.90.0.1 || 210.3.14.1)
+
+2) Excluding IP for router interfaces:
+    ip dhcp excluded-address 168.90.0.1
+    ip dhcp excluded-address 210.3.14.1
+
+3) Configuring router interfaces: 
+    interface GigabitEthernet0/0
+    ip address 168.90.0.1 255.255.0.0
+    interface GigabitEthernet0/1
+    ip address 210.3.14.1 255.255.255.0
